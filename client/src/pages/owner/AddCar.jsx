@@ -115,13 +115,14 @@ const AddCar = () => {
         {/*Car Description */}
         <div className='flex flex-col w-full'>
             <label>Description</label>
-            <textarea rows={5} placeholder="e.g. Aluxurious SUV with a spacios interior and a powerful engine." required className='px-3 py-2 mt-1 border border-borderColor rounded-md outline-none' value={car.description} onChange={e=> setCar({...car, description: e.target.value})}></textarea>
+            <textarea rows={5} placeholder="e.g. A luxurious SUV with a spacios interior and a powerful engine." required className='px-3 py-2 mt-1 border border-borderColor rounded-md outline-none' value={car.description} onChange={e=> setCar({...car, description: e.target.value})}></textarea>
           </div>
 
-          <button className='flex items_center gap-2 px-4 py-2.5 mt-4bg-primary text-white rounded-md font-medium w-max cursor-poiter'>
-            <img src={assets.tick_icon} alt="" />
+          <button className='flex items-center gap-2 px-4 py-2.5 mt-4 bg-primary text-white rounded-md font-medium w-max cursor-pointer'>
+          <img src={assets.tick_icon} alt="" />
             List Your Car
           </button>
+
 
 
       </form>
